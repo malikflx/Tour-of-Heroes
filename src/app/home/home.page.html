@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Tour of Heroes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+      <ion-card-header>
+        <ion-card-subtitle>Malik Felix</ion-card-subtitle>
+        <ion-card-title>Tour of Heroes</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Who's your hero?</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-list lines="none">
+      <ion-list-header>
+        <ion-label>Resources</ion-label>
+      </ion-list-header>
+      <ion-item [routerDirection]="'root'" [routerLink]="['/toc']">
+        <ion-icon slot="start" color="medium" name="book"></ion-icon>
+        <ion-label>Table Of Contents</ion-label>
+      </ion-item>
+    </ion-list>
+</ion-content>
+<ion-footer>
+    <ion-toolbar>
+      <ion-title>Tour of Heros</ion-title>
+  
+      <ion-buttons slot="primary">
+        <ion-button [routerDirection]="'root'" [routerLink]="['/toc']">
+          <ion-icon slot="icon-only" name="arrow-dropright"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-footer>
